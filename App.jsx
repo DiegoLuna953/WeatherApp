@@ -23,6 +23,8 @@ export default App = () => {
     city ? getWeather : setWeatherData(null);
   }, [city]);
 
+
+
   return(
     <View style={styles.container}>
       <Text style={styles.title}>Welcome to Weather app!</Text>
@@ -79,7 +81,8 @@ const styles =StyleSheet.create({
     backgroundColor: '#F5E8DD',
     textAlign: 'center',
     fontSize: 30,
-    fontWeight: 'bold'
+    fontWeight: 'bold',
+    padding: 10,
   },
   textInput: {
     borderWidth: 1,
